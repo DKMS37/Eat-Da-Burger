@@ -13,14 +13,14 @@
         <!-- Undevoured Burgers -->
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading" id="lefthead"><strong>NEW BURGERS</strong></div>
+                <div class="panel-heading" id="lefthead"><i class="fas fa-grin-hearts"></i> <strong>NEW BURGERS</strong> <i class="fas fa-grin-tongue"></i></div>
                 <div class="panel-body">
                     <ul>
                         {{#each burgers}}
                         {{#unless devoured}}
                         <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
                         <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
-                            data-newDevoured="{{devour}}">Devour <span class="fa fa-cutlery"></span></button>
+                            data-newDevoured="{{devour}}">Devour It <span id="cutlery" class="fas fa-utensils"></span></button>
                         <hr>
                         {{/unless}}
                         {{/each}}
@@ -31,14 +31,14 @@
         <!-- Devoured Burgers -->
         <div class="col-sm-6">
             <div class="panel panel-default">
-                <div class="panel-heading" id="righthead"><strong>DEVOURED BURGERS</strong></div>
+                <div class="panel-heading" id="righthead"><i class="far fa-smile-beam"></i> <strong>DEVOURED BURGERS</strong> <i class="far fa-kiss-wink-heart"></i></div>
                 <div class="panel-body">
                     <ul>
                         {{#each burgers}}
                         {{#if devoured}}
                         <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
                         <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}"
-                            data-newDevoured="{{devour}}"><span class="fa fa-trash"> finiSH</span></button>
+                            data-newDevoured="{{devour}}"><span class="fas fa-trash-alt"> finiSHed</span></button>
                         <hr>
                         {{/if}}
                         {{/each}}
@@ -50,13 +50,17 @@
     <div class="jumbotron1 text-center">
         <br>
         <h1 class="text-center" id="color-override">CRAVING FOR BURGERS???</h1>
-        <h2 class="text-center" id="color-override">"Make Your Own Custom Burger here"</h2>
+        <strong>
+            <h2 class="text-center" id="color-override">"Make Your Own Custom Burger here"</h2>
+        </strong>
         <panel>
             <form class="create-form">
                 <div class="form-group">
-                    <h4><span><label for="newburger" id="color-override">NEW BURGER:</label> <input type="text" id="newburger"
-                                name="burger"> <button type="submit" class="btn btn-success" id="addburger"> <span
-                                    class="fa fa-thumbs-up">bon ap·pé·tit</span></button></span></h4>
+                    <strong>
+                        <h3><span id="thumb" class="fa fa-thumbs-up"> <label for="newburger" id="new-burger">NEW
+                                    BURGER:</label> <input type="text" id="newburger" name="burger"> <button type="submit"
+                                    class="btn btn-success" id="addburger">bon ap·pé·tit <span class="fa fa-check"></span></button></span></h3>
+                    </strong>
                 </div>
             </form>
         </panel>
@@ -66,10 +70,10 @@
     <hr>
     <footer class="footer text-center">
         <div class="container">
-            <p><a style="color:yellowgreen" href="https://github.com/_WRONG_CLICKED_<--_GO_BACK.../_The_Real_Github_Repo_is_THE_RIGHT_ONE.">GitHub
+            <p><i class="far fa-thumbs-down"></i> <a style="color:yellowgreen" href="https://github.com/_WRONG_CLICKED_<--_GO_BACK.../_The_Real_Github_Repo_is_THE_RIGHT_ONE.">GitHub
                     Repo</a> <a style="color:turquoise">|</a> <a style="color:lemonchiffon" href="https://github.com/DKMS37/Eat-Da-Burger">The
                     Real GitHub
-                    Repo</a></p>
+                    Repo </a><i class="fab fa-github"></i></p>
         </div>
     </footer>
 </div>

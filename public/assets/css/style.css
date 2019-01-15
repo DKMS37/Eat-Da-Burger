@@ -28,16 +28,32 @@
 }
 #lefthead {
     background-color: green;
-    color: yellow;
+    color:lemonchiffon;
     text-align: center;
     font-size: 1.2em;
 }
-#eatbutton, #trashbutton {
+#eatbutton{
+    float: right;
+    color: darkred
+
+}
+
+#trashbutton {
     float: right;
 }
+
 #righthead {
-    background-color:lemonchiffon;
+    background-color:yellow;
     color: red;
     text-align: center;
     font-size: 1.2em;
+}
+
+#cutlery { 
+    color: crimson;
+
+}
+
+#new-burger, #thumb {
+    color:white;
 }
