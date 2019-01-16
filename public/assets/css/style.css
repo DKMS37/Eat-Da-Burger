@@ -54,6 +54,10 @@
 
 }
 
-#new-burger, #thumb {
+#new-burger {
     color:white;
+} 
+#thumb{
+    color:white;
+
 }
